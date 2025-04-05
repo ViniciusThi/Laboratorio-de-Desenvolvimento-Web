@@ -50,4 +50,84 @@ O comando "git remote" é usado para gerenciar conexões com repositórios remot
 - Verificar repositórios remotos configurados
 - Remover conexões com repositórios remotos
 - Alterar URLs de repositórios remotos
-- Gerenciar múltiplos repositórios remotos 
+- Gerenciar múltiplos repositórios remotos
+
+## 6. Diferença entre "git status" e "git log"
+
+**git status:**
+- Mostra o estado atual do seu repositório
+- Exibe arquivos modificados, adicionados ou removidos
+- Indica quais arquivos estão prontos para commit
+- Útil para verificar mudanças antes de fazer commit
+
+**git log:**
+- Mostra o histórico de commits
+- Exibe informações como autor, data e mensagem de cada commit
+- Permite ver a evolução do projeto ao longo do tempo
+- Útil para entender quem fez quais alterações e quando
+
+## 7. Propósito de "git add", "git commit" e "git push"
+
+**git add:**
+- Adiciona arquivos à área de staging
+- Parâmetros comuns:
+  - `git add .` (adiciona todos os arquivos)
+  - `git add nome_arquivo` (adiciona arquivo específico)
+
+**git commit:**
+- Cria um ponto de salvamento das mudanças
+- Parâmetros comuns:
+  - `git commit -m "mensagem"` (cria commit com mensagem)
+  - `git commit -a` (commit de todos os arquivos modificados)
+
+**git push:**
+- Envia commits para o repositório remoto
+- Parâmetros comuns:
+  - `git push origin main` (envia para a branch main)
+  - `git push -u origin branch` (configura upstream)
+
+## 8. Diferença entre "git push" e "git pull"
+
+**git push:**
+- Envia suas alterações locais para o repositório remoto
+- Atualiza o repositório remoto com seus commits
+
+**git pull:**
+- Baixa e mescla alterações do repositório remoto
+- Combina `git fetch` (baixa alterações) e `git merge` (mescla alterações)
+- Mantém seu repositório local atualizado
+
+## 9. Ramificações (Branches)
+
+Branches são linhas independentes de desenvolvimento que permitem:
+- Trabalhar em diferentes funcionalidades simultaneamente
+- Isolar mudanças experimentais
+- Manter o código principal (main/master) estável
+- Facilitar o trabalho em equipe
+- Gerenciar diferentes versões do software
+
+## 10. Outras Plataformas de Hospedagem
+
+**GitLab:**
+- Similar ao GitHub
+- Oferece CI/CD integrado
+- Permite hospedagem self-hosted
+- Foco em DevOps
+
+**Bitbucket:**
+- Integração com ferramentas Atlassian
+- Bom para equipes pequenas
+- Suporte a Mercurial além do Git
+- Foco em empresas
+
+**Azure DevOps:**
+- Integração com ecossistema Microsoft
+- Ferramentas de gerenciamento de projeto
+- CI/CD robusto
+- Ideal para projetos empresariais
+
+**Comparação com GitHub:**
+- GitHub tem maior comunidade
+- GitHub Pages é único
+- GitHub tem mais integrações
+- Outras plataformas podem ter recursos específicos para DevOps 
